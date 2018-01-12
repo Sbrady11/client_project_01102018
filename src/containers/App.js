@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { StyleSheet, Text, View } from 'react-native'
+import { NativeRoute, Route, Link } from 'react-router-native'
+
 import logo from '../images/logo.svg';
 import '../App.css';
 import AboutUs from '../components/aboutUs.js'
