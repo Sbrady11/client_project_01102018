@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native'
-import { NativeRoute, Route, Link } from 'react-router-native'
-
 import logo from '../images/logo.svg';
 import '../App.css';
 import AboutUs from '../components/aboutUs.js'
 import Employers from '../components/employers.js'
 import Candidates from '../components/candidates.js'
+import { Router, Route, Switch } from 'react-router'
 
 class App extends Component {
   render() {
