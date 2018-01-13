@@ -16,7 +16,6 @@ class App extends Component {
           <h1 className="App-title">ATP Options </h1>
         </header>
         <p className="App-intro">
-          Index Page
         </p>
         <Router>
           <div>
