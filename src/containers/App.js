@@ -4,7 +4,8 @@ import '../App.css';
 import AboutUs from '../components/aboutUs.js'
 import Employers from '../components/employers.js'
 import Candidates from '../components/candidates.js'
-import { Router, Route, Switch } from 'react-router'
+import Home from '../components/home.js'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 
 class App extends Component {
   render() {
@@ -17,9 +18,23 @@ class App extends Component {
         <p className="App-intro">
           Index Page
         </p>
-        <AboutUs />
-        <Employers />
-        <Candidates />
+        <Router>
+          <div>
+            <ul>
+              <li><Link to="/">ATPOptions</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/employers">Employers</Link></li>
+              <li><Link to="/candidates">Candidates</Link></li>
+            </ul>
+
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/about" exact component={AboutUs} />
+              <Route path="/employers" exact component={Employers} />
+              <Route path="/candidates" exact component={Candidates} />
+            </Switch>
+          </div>
+        </Router>
       </div>
     );
   }
