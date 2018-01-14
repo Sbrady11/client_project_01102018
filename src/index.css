@@ -55,4 +55,6 @@ body {
 
 .page {
     padding: 0 24px;
+    z-index: -1;
+    position: absolute;
 }
