@@ -36,15 +36,13 @@ body {
     height: 62px;
     padding: 0 24px;
     background-color: grey;
+    z-index: 1
 }
 
 .TopBar a {
     margin-right: 18px;
     text-decoration: none;
-}
-
-.active {
-    color: white;
+    color: white
 }
 
 .animated-page-wrapper {
@@ -57,4 +55,6 @@ body {
 
 .page {
     padding: 0 24px;
+    z-index: -1;
+    position: absolute;
 }
