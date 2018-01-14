@@ -6,7 +6,7 @@ import Candidates from '../components/candidates.js';
 import Home from '../components/home.js';
 import Sales from '../components/sales.js';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import AnimatedRoutes from "../components/animatedRoutes";
+import AnimatedRoutes from '../components/animatedRoutes';
 
 /* webpage */
 class App extends Component {

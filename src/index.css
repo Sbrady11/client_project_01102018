@@ -58,3 +58,18 @@ body {
     z-index: -1;
     position: absolute;
 }
+
+img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pageText {
+    padding: 10px;
+    border: 25px solid grey;
+    background: grey;
+    color: white;
+}
