@@ -3,7 +3,7 @@ import React from 'react';
 class Employers extends React.Component {
   render() {
     return (
-      <div>
+      <div className="page">
         <p>
          EMPLOYERS
         </p>
