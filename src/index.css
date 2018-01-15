@@ -73,3 +73,18 @@ img {
     background: grey;
     color: white;
 }
+
+img {
+    animation: slideIn 20s infinite;
+    font-weight: bold;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 300px;
+    }
+}

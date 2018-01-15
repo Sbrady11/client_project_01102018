@@ -7,6 +7,9 @@ import Home from '../components/home.js';
 import Sales from '../components/sales.js';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import AnimatedRoutes from '../components/animatedRoutes';
+import Reatained from '../components/retained.js';
+import Project from '../components/project.js';
+import Contact from '../components/contact.js';
 
 /* webpage */
 class App extends Component {
@@ -21,6 +24,9 @@ class App extends Component {
                 <Link to="/employers">Employers</Link>
                 <Link to="/candidates">Candidates</Link>
                 <Link to="/sales">Sales</Link>
+                <Link to="/retainedsearch">Reatained Search</Link>
+                <Link to="/projectmanagement&staffingsolutions">Project Management and Staffing</Link>
+                <Link to="/contact">Contact</Link>
             </div>
             <AnimatedRoutes>
               <Route path="/" exact component={Home} />
@@ -28,7 +34,10 @@ class App extends Component {
               <Route path="/employers" exact component={Employers} />
               <Route path="/candidates" exact component={Candidates} />
               <Route path="/sales" exact component={Sales} />
-            </AnimatedRoutes>
+              <Route path="/retainedsearch" exact component={Reatained} />
+              <Route path="/projectmanagement&staffingsolutions" exact component={Project} />
+              <Route path="/contact" exact component={Contact} />
+            </AnimatedRoutes> 
           </div>
         </Router>
       </div>  

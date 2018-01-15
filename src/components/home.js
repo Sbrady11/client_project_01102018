@@ -4,7 +4,7 @@ import Logo from '../images/ATPLogo.png';
 class Home extends React.Component {
   render() {
     return (
-      <div className="page">
+      <div>
         <p>
           <img src ={Logo} alt="ATPOptions"/>
         </p>
