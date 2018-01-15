@@ -39,6 +39,24 @@ body {
     z-index: 1
 }
 
+.sideNav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    color: white
+}
+
+.sideNav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 12;
+    color: white;
+    display: block;
+    background: grey;
+}
+
 .TopBar a {
     margin-right: 18px;
     text-decoration: none;
@@ -72,19 +90,4 @@ img {
     border: 25px solid grey;
     background: grey;
     color: white;
-}
-
-img {
-    animation: slideIn 20s infinite;
-    font-weight: bold;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes slideIn {
-    from {
-        left: 0px;
-    }
-    to {
-        left: 300px;
-    }
 }
